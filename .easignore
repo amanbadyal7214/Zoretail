@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Expo directories
+.expo/
+dist/
+web-build/
+
+# EAS build artifacts
+eas-build-pre-install
+.eas/
+
+# Android/iOS native folders
+android/
+ios/
+
+# Windows specific (AppData causing the error)
+AppData/
+*/AppData/
+**/AppData/**
+
+# Temp files
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large folders that shouldn't be uploaded
+assets/images/
+assets/android-icon-foreground.png
+assets/android-icon-background.png
+assets/android-icon-monochrome.png
+assets/favicon.png
+assets/icon.png
+assets/splash-icon.png
