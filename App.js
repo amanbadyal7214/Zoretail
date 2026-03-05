@@ -8,7 +8,6 @@ import {
   Platform, 
   ActivityIndicator,
   RefreshControl,
-  ScrollView
 } from 'react-native';
 import { WebView } from 'react-native-webview';
 
@@ -54,20 +53,12 @@ export default function App() {
           renderLoading={() => (
             <View style={styles.loader}>
               <ActivityIndicator size="large" color="#0066FF" />
-              <StatusBar style="dark" />
             </View>
           )}
-        />
-        
-        <ScrollView
-          style={StyleSheet.absoluteFill}
-          contentContainerStyle={{ flex: 1 }}
-          pointerEvents="box-none"
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
           }
-        >
-        </ScrollView>
+        />
         <StatusBar style="auto" />
       </View>
     </SafeAreaView>
